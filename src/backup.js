@@ -1,4 +1,3 @@
-'use strict'
 
 import mysqlDump from 'mysqldump';
 import config from './config';
