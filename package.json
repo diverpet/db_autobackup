@@ -1,0 +1,35 @@
+{
+  "name": "db_autobackup",
+  "version": "1.0.0",
+  "description": "mysql autobackup tool",
+  "main": "backup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node app/backup.js",
+    "build": "rimraf app && babel src --out-dir app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diverpet/db_autobackup.git"
+  },
+  "author": "koudoP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diverpet/db_autobackup/issues"
+  },
+  "homepage": "https://github.com/diverpet/db_autobackup#readme",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-plugin-istanbul": "^2.0.1",
+    "babel-preset-es2015-node": "^6.1.1",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-register": "^6.16.3",
+    "rimraf": "^2.5.4"
+  },
+
+  "dependencies": {
+    "silly-datetime": "0.1.2",
+    "mysql": "^2.11.1",
+    "mysqldump": "1.4.2"
+  }
+}
