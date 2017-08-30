@@ -29,5 +29,7 @@ mysqlDump({
 	//create data.sql file;
 })
 
-fs.unlinkSync(expiredFile);
+if(fs.existsSync(expiredFile)){
+  fs.unlinkSync(expiredFile);
+}
   //detele expired file.
